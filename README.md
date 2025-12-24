@@ -18,11 +18,13 @@
 | 15 | Система опросов        | Сервис SurveyService: метод SubmitAnswers(stream Answer) для отправки ответов на опрос одним пакетом (Client streaming RPC). |
 
 # Ход работы
-Файлы `survey.proto`, `server.py`, `client.py`, `lab1_png.ipynb` являются основной частью работы:
-1. `survey.proto` - листинг `.proto` файла `music_player`
-2. `server.py` - листинг кода серверной части
-3. `client.py` - листинг кода клиентской части
-4. `lab1_png.ipynb` - скриншоты работы серверной и клиентской части
+Файлы `survey.proto`, `survey_pb2.py`, `survey_pb2_grpc.py`, `server.py`, `client.py`, `lab1_png.ipynb` являются основной частью работы:
+1. `survey.proto` - определение сервиса
+2. `survey_pb2.py` - автоматически генерируется
+3. `survey_pb2_grpc.py` - автоматически генерируется
+4. `server.py` - серверная часть
+5. `client.py` - клиентская часть
+6. `lab1_png.ipynb` - скриншоты работы серверной и клиентской части
 
 # Вывод
 Вывод по лабораторной работе
