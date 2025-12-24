@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+service SurveyService {
+    rpc SubmitAnswers(stream Answer) returns (Response);
+}
+
+message Answer {
+    string question_id = 1;
+    string user_id = 2;
+    string answer_text = 3;
+}
+
+message Response {
+    string status = 1;
+    int32 answers_received = 2;
+    string message = 3;
+}
